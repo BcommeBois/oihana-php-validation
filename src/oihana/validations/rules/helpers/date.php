@@ -14,7 +14,7 @@ use function oihana\core\strings\compile;
  *
  * @param string|null $format The date format pattern (Default Y-m-d)
  *
- * @return string
+ * @return string The compiled `date` (or `date:<format>`) rule expression.
  */
 function date( ?string $format = null ) :string
 {

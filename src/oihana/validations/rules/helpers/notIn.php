@@ -13,9 +13,9 @@ use function oihana\core\strings\compile;
  *
  * This rule also uses in_array and can have strict checks enabled the same way as In.
  *
- * @param string ...$values
+ * @param string ...$values The disallowed values.
  *
- * @return string
+ * @return string The compiled `not_in:<values>` rule expression.
  */
 function notIn( string ...$values ) :string
 {

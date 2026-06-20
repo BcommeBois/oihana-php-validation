@@ -86,8 +86,8 @@ class I18nRule extends Rule
     /**
      * Sets allowed languages.
      *
-     * @param array|string|null $languages
-     * @return static
+     * @param array|string|null $languages The allowed language codes (array or comma-separated list).
+     * @return static Returns `$this` to allow method chaining.
      */
     public function languages( array|string|null $languages ): static
     {
@@ -100,8 +100,8 @@ class I18nRule extends Rule
      * and that values are string or null.
      *
      * @param mixed $value array/object of translations
-     * @return bool
-     * @throws ParameterException
+     * @return bool True if the value is a valid localized map keyed by the allowed languages; false otherwise.
+     * @throws ParameterException If a required rule parameter is missing or invalid.
      */
     public function check( mixed $value ): bool
     {

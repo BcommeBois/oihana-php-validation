@@ -30,9 +30,9 @@ use function oihana\core\strings\compile;
  * $validation->passes(); // true if filters only has the keys in array_can_only_have_keys
  * ```
  *
- * @param string ...$values
+ * @param string ...$values The keys allowed in the array.
  *
- * @return string
+ * @return string The compiled `array_can_only_have_keys:<keys>` rule expression.
  */
 function arrayCanOnlyHaveKeys( string ...$values ) :string
 {

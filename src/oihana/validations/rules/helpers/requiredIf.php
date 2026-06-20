@@ -14,8 +14,8 @@ use function oihana\core\strings\compile;
  * For example required_if:something,1,yes,on will be required if something's value is one of 1, '1', 'yes', or 'on'.
  *
  * @param string $anotherField The another field to evaluates.
- * @param mixed ...$values
- * @return string
+ * @param mixed ...$values The values of `$anotherField` that make this field required.
+ * @return string The compiled `required_if:<field>,<values>` rule expression.
  */
 function requiredIf( string $anotherField , mixed ...$values ) :string
 {

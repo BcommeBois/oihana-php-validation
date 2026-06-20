@@ -28,9 +28,9 @@ use oihana\validations\enums\Rules;
  * ]);
  * ```
  *
- * @param string|int|float $value
+ * @param string|int|float $value The minimum size (length, numeric value, or file size such as `1M`).
  *
- * @return string
+ * @return string The compiled `min:<value>` rule expression.
  */
 function min( string|int|float $value ) :string
 {

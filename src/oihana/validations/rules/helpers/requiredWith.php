@@ -20,9 +20,9 @@ use function oihana\core\strings\compile;
  * then the required_with will never trigger as the sometimes rule will negate it.
  * a would also need to be explicitly passed to trigger the rule.
  *
- * @param string ...$fields
+ * @param string ...$fields The other fields whose presence makes this field required.
  *
- * @return string
+ * @return string The compiled `required_with:<fields>` rule expression.
  */
 function requiredWith( string ...$fields ) :string
 {

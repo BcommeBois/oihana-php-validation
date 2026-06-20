@@ -10,9 +10,9 @@ use oihana\validations\enums\Rules;
  *
  * The field under validation must be numeric and must have an exact length of value.
  *
- * @param int $value
+ * @param int $value The exact number of digits the field must have.
  *
- * @return string
+ * @return string The compiled `digits:<value>` rule expression.
  */
 function digits( int $value ) :string
 {

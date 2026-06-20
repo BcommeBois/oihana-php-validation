@@ -52,3 +52,14 @@ built on [Somnambulist Validation](https://github.com/somnambulist-tech/validati
   through a stray `use` import and a `@see GreaterThan` tag on the `GREATER_THAN`
   constant — a copy-paste leftover. Pointed the `@see` at the library's own
   `rules\GreaterThanRule` and removed the dead PHPUnit import.
+- Corrected copy-paste leftovers in the PHPDoc of `rules\geo\LongitudeRule`
+  (its summary described *latitude* and `-90..90` instead of longitude and
+  `-180..180`) and fixed stale `@example` `use` imports that referenced the
+  wrong namespace or class in several geo, auth and model rules.
+
+### Changed
+- Completed the PHPDoc across the library: filled every `@param`, `@return` and
+  `@throws` description (rules and the 33 helper free functions), standardized
+  the container/reflection exception descriptions, and corrected the stale
+  `@package oihana\api\validations\rules` tags to the actual namespaces.
+  Comments only — no behavioural change.

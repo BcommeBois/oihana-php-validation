@@ -58,7 +58,7 @@ class RangeRule extends AbstractRangeRule
     /**
      * Check if the given value is within the min/max parameters.
      *
-     * @throws ParameterException
+     * @throws ParameterException If a required rule parameter is missing or invalid.
      */
     public function check(mixed $value): bool
     {

@@ -19,7 +19,7 @@ use function oihana\core\strings\compile;
  *
  * @param string $date The date format pattern.
  *
- * @return string
+ * @return string The compiled `after:<date>` rule expression.
  */
 function after( string $date ) :string
 {

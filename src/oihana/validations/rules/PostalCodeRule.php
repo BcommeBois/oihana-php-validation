@@ -90,7 +90,7 @@ class PostalCodeRule extends Rule
      * The country code of the postalCode regex pattern.
      *
      * @param array|string|null $value The country code of the postal code.
-     * @return static
+     * @return static Returns `$this` to allow method chaining.
      *
      * @example
      * ```php
@@ -113,7 +113,7 @@ class PostalCodeRule extends Rule
      *
      * @return bool True if the value satisfies the condition.
      *
-     * @throws ParameterException
+     * @throws ParameterException If a required rule parameter is missing or invalid.
      */
     public function check( mixed $value ): bool
     {

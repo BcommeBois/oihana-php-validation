@@ -15,7 +15,7 @@ use function oihana\core\strings\compile;
  *
  * @param string|array ...$rules One or more rules to combine.
  *
- * @return string
+ * @return string The combined rule expression, joined with the pipe (`|`) character.
  *
  * @example
  * ```php

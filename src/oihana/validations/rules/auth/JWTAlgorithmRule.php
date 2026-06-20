@@ -23,7 +23,7 @@ use xyz\oihana\schema\constants\JWTAlgorithm;
  * **Examples**
  *
  * ```php
- * use oihana\validations\rules\JWTAlgorithmRule;
+ * use oihana\validations\rules\auth\JWTAlgorithmRule;
  * use Somnambulist\Components\Validation\Validator;
  *
  * $rule = new JWTAlgorithmRule() ;

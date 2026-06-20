@@ -20,8 +20,8 @@ abstract class ContainerRule extends Rule
      * @param ContainerInterface $container The DI container reference.
      * @param array              $init      The options to passed-in the rule.
      *
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
+     * @throws ContainerExceptionInterface If the container encounters an error while retrieving the entry.
+     * @throws NotFoundExceptionInterface If no entry was found for the given identifier in the container.
      */
     public function __construct( ContainerInterface $container , array $init = [] )
     {

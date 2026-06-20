@@ -12,9 +12,9 @@ use function oihana\core\strings\compile;
  * The field under this rule is not allowed unless another_field has one of these values. This is the inverse of prohibited_if.
  *
  * @param string $anotherField The another field to evaluates.
- * @param mixed ...$values
+ * @param mixed ...$values The values of `$anotherField` that lift the prohibition.
  *
- * @return string
+ * @return string The compiled `prohibited_unless:<field>,<values>` rule expression.
  */
 function prohibitedUnless( string $anotherField , mixed ...$values  ) :string
 {

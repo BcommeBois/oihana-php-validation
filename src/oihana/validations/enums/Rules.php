@@ -19,7 +19,7 @@ use oihana\validations\rules\RangeRule;
  *
  * @see https://github.com/somnambulist-tech/validation?tab=readme-ov-file#available-rules
  *
- * @package oihana\api\validations\rules
+ * @package oihana\validations\enums
  * @author  Marc Alcaraz (ekameleon)
  * @since   1.0.0
  */

@@ -74,8 +74,8 @@ class ExistModelRule extends ContainerRule
      * @param ContainerInterface $container The DI container reference.
      * @param array|string       $init      The options to passed-in the rule.
      *
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
+     * @throws ContainerExceptionInterface If the container encounters an error while retrieving the entry.
+     * @throws NotFoundExceptionInterface If no entry was found for the given identifier in the container.
      */
     public function __construct
     (
@@ -131,9 +131,9 @@ class ExistModelRule extends ContainerRule
      *
      * @return bool True if the value satisfies the condition.
      *
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
-     * @throws ParameterException
+     * @throws ContainerExceptionInterface If the container encounters an error while retrieving the entry.
+     * @throws NotFoundExceptionInterface If no entry was found for the given identifier in the container.
+     * @throws ParameterException If a required rule parameter is missing or invalid.
      */
     public function check( mixed $value ): bool
     {
@@ -166,7 +166,7 @@ class ExistModelRule extends ContainerRule
      *
      * @param ?string $value The key value.
      *
-     * @return $this
+     * @return $this Returns `$this` to allow method chaining.
      */
     public function key( ?string $value = null ) :static
     {
@@ -179,7 +179,7 @@ class ExistModelRule extends ContainerRule
      *
      * @param ?string $value The identifier of the model definition in the DI container.
      *
-     * @return $this
+     * @return $this Returns `$this` to allow method chaining.
      */
     public function model( ?string $value = null ) :static
     {

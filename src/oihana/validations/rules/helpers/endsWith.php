@@ -14,7 +14,7 @@ use function oihana\core\strings\compile;
  *
  * @param string $anotherField The another field to evaluates.
  *
- * @return string
+ * @return string The compiled `ends_with:<suffix>` rule expression.
  */
 function endsWith( string $anotherField ) :string
 {

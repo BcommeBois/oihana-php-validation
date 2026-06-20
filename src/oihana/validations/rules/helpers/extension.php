@@ -17,9 +17,9 @@ use function oihana\core\strings\compile;
  * If you require strict mime checking you should implement a custom MimeTypeGuesser
  * that can make use of a server side file checker that uses a mime library.
  *
- * @param string ...$values
+ * @param string ...$values The allowed file extensions (e.g. `jpg`, `png`).
  *
- * @return string
+ * @return string The compiled `extension:<extensions>` rule expression.
  */
 function extension( string ...$values ) :string
 {

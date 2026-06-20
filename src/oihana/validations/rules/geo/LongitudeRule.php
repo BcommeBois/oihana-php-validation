@@ -5,13 +5,13 @@ namespace oihana\validations\rules\geo ;
 use oihana\validations\rules\abstracts\AbstractRangeRule;
 
 /**
- * Validates that a value represents a valid geographic latitude.
+ * Validates that a value represents a valid geographic longitude.
  *
- * The latitude must be a numeric value between -90 and 90 degrees (inclusive).
+ * The longitude must be a numeric value between -180 and 180 degrees (inclusive).
  *
  * @example
  * ```php
- * use oihana\validations\rules\LatitudeRule;
+ * use oihana\validations\rules\geo\LongitudeRule;
  *
  * $rule = new LongitudeRule();
  *

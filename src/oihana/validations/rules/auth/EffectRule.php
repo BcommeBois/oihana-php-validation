@@ -15,7 +15,7 @@ use xyz\oihana\schema\constants\Effect;
  * **Usage Example**
  *
  * ```php
- * use oihana\validations\rules\JWTAlgorithmRule;
+ * use oihana\validations\rules\auth\EffectRule;
  * use Somnambulist\Components\Validation\Validator;
  *
  * $rule = new EffectRule() ;

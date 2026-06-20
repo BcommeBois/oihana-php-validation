@@ -58,9 +58,9 @@ use function oihana\core\strings\compile;
  * ]);
  * ```
  *
- * @param string ...$values
+ * @param string ...$values The keys that must all be present in the array.
  *
- * @return string
+ * @return string The compiled `array_must_have_keys:<keys>` rule expression.
  */
 function arrayMustHaveKeys( string ...$values ) :string
 {

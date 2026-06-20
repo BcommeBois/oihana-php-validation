@@ -82,8 +82,8 @@ class ISO8601DurationRule extends Rule
     /**
      * Checks whether the given value satisfies the rule.
      *
-     * @param mixed $value
-     * @return bool
+     * @param mixed $value The value to validate.
+     * @return bool True if the value is a valid ISO 8601 duration; false otherwise.
      */
     public function check( mixed $value ) :bool
     {

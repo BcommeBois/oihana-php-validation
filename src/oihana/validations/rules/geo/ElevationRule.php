@@ -12,7 +12,7 @@ use oihana\validations\rules\abstracts\AbstractRangeRule;
  *
  * @example
  * ```php
- * use oihana\validations\rules\ElevationRule;
+ * use oihana\validations\rules\geo\ElevationRule;
  *
  * $rule = new ElevationRule();
  *

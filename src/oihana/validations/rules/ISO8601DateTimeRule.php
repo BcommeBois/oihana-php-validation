@@ -78,8 +78,8 @@ class ISO8601DateTimeRule extends Rule
     /**
      * Checks whether the given value satisfies the rule.
      *
-     * @param mixed $value
-     * @return bool
+     * @param mixed $value The value to validate.
+     * @return bool True if the value is a valid ISO 8601 date-time; false otherwise.
      */
     public function check( mixed $value ) :bool
     {

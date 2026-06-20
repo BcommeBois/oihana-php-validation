@@ -23,9 +23,9 @@ use oihana\validations\enums\Rules;
  * ]);
  * ```
  *
- * @param string|int|float $value
+ * @param string|int|float $value The maximum size (length, numeric value, or file size such as `2M`).
  *
- * @return string
+ * @return string The compiled `max:<value>` rule expression.
  */
 function max( string|int|float $value ) :string
 {

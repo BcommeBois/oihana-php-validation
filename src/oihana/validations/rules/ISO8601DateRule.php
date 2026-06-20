@@ -27,7 +27,7 @@ use Stringable;
  * 2025-10-13 99:99
  * ```
  *
- * @package oihana\api\validations\rules
+ * @package oihana\validations\rules
  * @author  Marc Alcaraz (ekameleon)
  * @since   1.0.0
  */
@@ -66,8 +66,8 @@ class ISO8601DateRule extends Rule
 
     /**
      * Check if the value is valid.
-     * @param $value
-     * @return bool
+     * @param mixed $value The value to validate.
+     * @return bool True if the value is a valid ISO 8601 date; false otherwise.
      */
     public function check( $value ): bool
     {

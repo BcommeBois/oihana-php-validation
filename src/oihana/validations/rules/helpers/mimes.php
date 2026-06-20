@@ -16,9 +16,9 @@ use function oihana\core\strings\compile;
  * If you require strict mime type validation you are recommended to implement
  * a custom MimeTypeGuesser that uses a full mime-type lookup library and replace the built-in mime rule.
  *
- * @param string ...$values
+ * @param string ...$values The allowed MIME file extensions (e.g. `jpg`, `png`).
  *
- * @return string
+ * @return string The compiled `mimes:<extensions>` rule expression.
  */
 function mimes( string ...$values ) :string
 {

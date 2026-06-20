@@ -23,10 +23,10 @@ use function oihana\core\strings\compile;
  * ]);
  * ```
  *
- * @param string|int|float $min
- * @param string|int|float $max
+ * @param string|int|float $min The minimum size (length, numeric value, or file size such as `1M`).
+ * @param string|int|float $max The maximum size (length, numeric value, or file size such as `2M`).
  *
- * @return string
+ * @return string The compiled `between:min,max` rule expression.
  */
 function between( string|int|float $min , string|int|float $max ) :string
 {

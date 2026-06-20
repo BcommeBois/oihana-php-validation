@@ -29,9 +29,9 @@ use function oihana\core\strings\compile;
  * )
  * ```
  *
- * @param string $regex
+ * @param string $regex The regular expression the value must match.
  *
- * @return string
+ * @return string The compiled `regex:<pattern>` rule expression.
  */
 function regex( string $regex ) :string
 {

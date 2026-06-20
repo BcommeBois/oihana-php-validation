@@ -19,8 +19,8 @@ use function oihana\core\strings\compile;
  * For example: if b "requires:a" and "a" is allowed to be nullable,
  * b will fail as it explicitly requires a with a value.
  *
- * @param string ...$fields
- * @return string
+ * @param string ...$fields The other fields that are required alongside this one.
+ * @return string The compiled `requires:<fields>` rule expression.
  */
 function requires( string ...$fields ) :string
 {

@@ -11,7 +11,7 @@ use oihana\validations\rules\abstracts\AbstractRangeRule;
  *
  * @example
  * ```php
- * use oihana\validations\rules\LatitudeRule;
+ * use oihana\validations\rules\geo\LatitudeRule;
  *
  * $rule = new LatitudeRule();
  *

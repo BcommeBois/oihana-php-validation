@@ -27,9 +27,9 @@ use function oihana\core\strings\compile;
  * ]);
  * ```
  *
- * @param string ...$values
+ * @param string ...$values The allowed values.
  *
- * @return string
+ * @return string The compiled `in:<values>` rule expression.
  */
 function in( string ...$values ) :string
 {

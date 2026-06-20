@@ -11,7 +11,7 @@ use function oihana\core\strings\compile;
  * @param string $name      The name of the rule
  * @param mixed ...$values  The optional values to passed-in.
  *
- * @return string
+ * @return string The compiled `<name>:<values>` rule expression.
  */
 function rule( string $name , mixed ...$values ) :string
 {

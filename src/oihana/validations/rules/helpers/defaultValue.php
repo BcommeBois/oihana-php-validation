@@ -16,7 +16,7 @@ use function oihana\core\strings\compile;
  *
  * @param mixed $value The default value.
  *
- * @return string
+ * @return string The compiled `default:<value>` rule expression.
  */
 function defaultValue( mixed $value ) :string
 {

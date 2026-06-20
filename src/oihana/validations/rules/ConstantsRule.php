@@ -123,7 +123,7 @@ class ConstantsRule extends Rule
      *
      * @param array|null $cases The constant values to allow in this rule.
      *
-     * @return static
+     * @return static Returns `$this` to allow method chaining.
      *
      * @example
      * ```php
@@ -148,7 +148,7 @@ class ConstantsRule extends Rule
      *
      * @param class-string<ConstantsTrait> $className The fully qualified class name.
      *
-     * @return static
+     * @return static Returns `$this` to allow method chaining.
      *
      * @example
      * ```php

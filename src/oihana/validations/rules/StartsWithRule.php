@@ -22,7 +22,7 @@ use Somnambulist\Components\Validation\Rule;
  * $rule->check('xyz');    // false
  * ```
  *
- * @package oihana\api\validations\rules
+ * @package oihana\validations\rules
  * @author  Marc Alcaraz (ekameleon)
  * @since   1.0.0
  */

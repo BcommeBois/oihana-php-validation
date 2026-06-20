@@ -12,8 +12,8 @@ use function oihana\core\strings\compile;
  * The field under validation must be present and not empty unless the another_field field is equal to any value.
  *
  * @param string $anotherField The another field to evaluates.
- * @param mixed ...$values
- * @return string
+ * @param mixed ...$values The values of `$anotherField` that keep this field optional.
+ * @return string The compiled `required_unless:<field>,<values>` rule expression.
  */
 function requiredUnless( string $anotherField , mixed ...$values ) :string
 {

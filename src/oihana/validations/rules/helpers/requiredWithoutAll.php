@@ -12,9 +12,9 @@ use function oihana\core\strings\compile;
  * The field under validation must be present
  * and not empty only when all the other specified fields are not present.
  *
- * @param string ...$fields
+ * @param string ...$fields The other fields that must all be absent for this field to be required.
  *
- * @return string
+ * @return string The compiled `required_without_all:<fields>` rule expression.
  */
 function requiredWithoutAll( string ...$fields ) :string
 {

@@ -13,7 +13,7 @@ use function oihana\core\strings\compile;
  *
  * @param string $anotherField The another field to evaluates.
  *
- * @return string
+ * @return string The compiled `different:<field>` rule expression.
  */
 function different( string $anotherField ) :string
 {

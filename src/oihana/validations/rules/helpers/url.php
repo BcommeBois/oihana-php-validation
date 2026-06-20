@@ -26,7 +26,7 @@ use function oihana\core\strings\compile;
  *
  * @param null|array|string $scheme The scheme(s) of the url to evaluates.
  *
- * @return string
+ * @return string The compiled `url` (or `url:<schemes>`) rule expression.
  */
 function url( null|array|string $scheme = null ) :string
 {

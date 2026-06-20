@@ -21,7 +21,7 @@ use Somnambulist\Components\Validation\Exceptions\ParameterException;
  * ### **Usage**
  *
  * ```php
- * use oihana\validations\rules\UniqueModelRule;
+ * use oihana\validations\rules\models\UniqueModelRule;
  * use Somnambulist\Components\Validation\Validator;
  * use Psr\Container\ContainerInterface;
  *
@@ -90,9 +90,9 @@ class UniqueModelRule extends ExistModelRule
      *
      * @return bool True if the value satisfies the condition.
      *
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
-     * @throws ParameterException
+     * @throws ContainerExceptionInterface If the container encounters an error while retrieving the entry.
+     * @throws NotFoundExceptionInterface If no entry was found for the given identifier in the container.
+     * @throws ParameterException If a required rule parameter is missing or invalid.
      */
     public function check( mixed $value ): bool
     {
